@@ -1,0 +1,45 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Documents
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# uv
+.uv-cache/
+uv.lock
+
+# IDEs
+.vscode/
+.idea/
+
+# Others
+.DS_Store
+
+# TRFolio: local portfolio data (never commit real user data)
+Trade Republic/
+data/
+*.duckdb
+*.csv
+portfolio_weights.csv
+
+# Exception: sample database for demo purposes is intentionally tracked
+!sample_portfolio/sample_portfolio.duckdb
+
+# Environment overrides
+.env
+*.env
+
+# Logs
+*.log
+logs/
