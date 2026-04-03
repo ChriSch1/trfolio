@@ -1,8 +1,8 @@
 # 📊 TRFolio - Dein Portfolio, automatisch analysiert
 
-**TRFolio** macht aus deinen PDF-Invoices von Trade Republic automatisch eine **intelligente Portfolio-Analyse** – mit Kursdaten, Gewinn/Verlust-Tracking und interaktiven Dashboards.
+**TRFolio** macht aus deinen PDF-Invoices von Trade Republic automatisch eine **intelligente Portfolio-Analyse** – mit Kursdaten, Gewinn/Verlust-Tracking, interaktiven Dashboards und dokumentierter Ablage.
 
-**Ein Klick. Alle deine Investitionen übersichtlich.**
+**Wenige Klicks. Alle deine Investitionen übersichtlich visualisiert und dokumentiert.**
 
 ---
 
