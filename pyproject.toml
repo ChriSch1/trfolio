@@ -1,7 +1,7 @@
 [project]
 name = "trfolio"
 version = "0.1.0"
-description = "Add your description here"
+description = "Trade Republic PDF-Abrechnungen archivieren, in DuckDB speichern und per Streamlit-Dashboard analysieren."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
