@@ -5,6 +5,9 @@
 **Wenige Klicks. Alle deine Investitionen übersichtlich visualisiert und dokumentiert.**
 
 ---
+## Ziel und Motivation
+
+TRFolio ist ein privates Softwareprojekt, welches aus dem Ziel entstanden ist, Abrechnungen zu Zinsen, Dividenden und Orders zentral und übersichtlich zu dokumentieren. Darüber hinaus bietet es die Möglichkeit Auswertungen und Analysefunktionen, die über die grundlegenden Möglichkeiten der Trade-Republic-App hinausgehen umzusetzen.
 
 ## 🚀 Quick Start (2 Minuten)
 
