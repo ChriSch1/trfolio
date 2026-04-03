@@ -9,6 +9,12 @@
 
 TRFolio ist ein privates Softwareprojekt, welches aus dem Ziel entstanden ist, Abrechnungen zu Zinsen, Dividenden und Orders zentral und übersichtlich zu dokumentieren. Darüber hinaus bietet es die Möglichkeit Auswertungen und Analysefunktionen, die über die grundlegenden Möglichkeiten der Trade-Republic-App hinausgehen umzusetzen.
 
+<p align="center">
+  <img width="1200" alt="TRFolio Overview Tab" src="https://github.com/user-attachments/assets/54e604ff-03f6-4093-9586-69fa59f4d556" />
+  <br/>
+  <em>Overview – Portfolio Value, Performance und Top Holdings auf einen Blick (Beispiel Demo-Portfolio)</em>
+</p>
+
 ## 🚀 Quick Start (2 Minuten)
 
 ### 1. Python & uv installieren
@@ -148,6 +154,18 @@ Das Sample-Portfolio enthält fiktive Transaktionen mit:
 
 Damit kannst du alle Dashboard-Tabs erkunden, bevor du deine eigenen Daten einliest.
 
+<p align="center">
+  <img width="1200" alt="TRFolio Stocks – Harvest Report und Bubble Map" src="https://github.com/user-attachments/assets/6b32322c-fa36-4ebf-b2c1-9a3d325e6982" />
+  <br/>
+  <em>Stocks – Harvest Report und Bubble Map (Sample Demo-Portfolio)</em>
+</p>
+
+<p align="center">
+  <img width="1200" alt="TRFolio Stocks – Closed Trades und Hall of Fame" src="https://github.com/user-attachments/assets/af675434-f427-4162-8486-28d2778ba557" />
+  <br/>
+  <em>Stocks – Closed Trades und Hall of Fame (Sample Demo-Portfolio)</em>
+</p>
+
 ---
 
 ## 📚 Detaillierte Funktionsweise
@@ -268,6 +286,18 @@ Das interaktive Dashboard zeigt dir alles auf einen Blick:
 - 📊 Branchen-Verteilung (Sektor-Analyse)
 - 🌍 Multi-Währungs-Konvertierung (zu EUR)
 - 📈 Performance-Trends (monatlich, jährlich)
+
+<p align="center">
+  <img width="1200" alt="TRFolio Income – Dividend Calendar und Top Payers" src="https://github.com/user-attachments/assets/7f6f292d-b53a-4a42-8683-e87ac1cf18b1" />
+  <br/>
+  <em>Income – Dividend Calendar und Top Payers (Sample Demo-Portfolio)</em>
+</p>
+
+<p align="center">
+  <img width="1200" alt="TRFolio Income – Tax Waterfall und Allowance Usage" src="https://github.com/user-attachments/assets/18cb5684-1d0d-4368-b15a-1e001283fb40" />
+  <br/>
+  <em>Income – Tax Waterfall und Freibetrag-Auslastung (Sample Demo-Portfolio)</em>
+</p>
 
 ---
 
@@ -410,3 +440,4 @@ Alle Wertpapiere, die **Trade Republic unterstützt**:
 ### Offene ToDos
 
 - Steuerverrechnungen (z.B. Anwendung Verlusttopf) können aktuell nicht verarbeitet werden.
+- 
