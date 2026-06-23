@@ -89,13 +89,20 @@ class DataExtractor:
             external_fee, financial_transaction_tax, foreign_tax,
             capital_tax, church_tax, soli_tax
 
-        Trade Republic does not charge a financial transaction tax,
-        so that value is always 0.
+        Trade Republic passes the Italian financial transaction tax
+        (Finanztransaktionssteuer) through on buy orders for eligible equities.
+        For all other event types the tax does not apply.
         """
         external_fee = 1 if event == 'buy' or event == 'sell' else 0
-        # TR does not levy a financial transaction tax — kept as 0 for
-        # forward-compatibility with the Record model.
-        financial_transaction_tax = 0
+
+        if event == 'buy':
+            ftt_match = re.search(
+                r'Finanztransaktionssteuer\b.*?([0-9]+(?:[.,][0-9]+)?)\s*EUR',
+                text, re.IGNORECASE
+            )
+            financial_transaction_tax = parse_money(ftt_match.group(1)) if ftt_match else 0
+        else:
+            financial_transaction_tax = 0
 
         if event == 'sell' or event == 'dividend':
             foreign_tax_match = re.search(r'Quellensteuer.*?([0-9.,]+)(?:\s*[A-Z]{3})?', text)
@@ -289,13 +296,19 @@ class DataExtractor:
         '''
         Function used to extract the option (buy, sell, div) from the text
         of the pdf file.
+
+        'Barausschüttung' is used by some issuers (e.g. Vonovia) instead of
+        'Dividende' and is treated as an equivalent dividend event.
         '''
         if re.search(r'(?<!ver)kauf\b', text, re.IGNORECASE):
             option = 'buy'
         elif ('verkauf' in text.lower()):
             option = 'sell'
-        elif re.search(r'dividende?\s+(?:mit\s+(?:dem\s+)?ex(?:-datum?)?|ex(?:-datum?)?)',\
-                text.lower()):
+        elif re.search(
+            r'(?:dividende?\s+(?:mit\s+(?:dem\s+)?ex(?:-datum?)?|ex(?:-datum?)?)'  # standard dividend
+            r'|baraussch\u00fcttung)',                                               # Vonovia-style payout
+            text.lower()
+        ):
             option = 'dividend'
         elif ('sparplanausf\u00fchrung' in text.lower()):
             option = 'etf_saving_plan'
